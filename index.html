@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaadiwala</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div style="display:flex; align-items:center; gap:20px;">
+  <h1>Gaadiwala</h1>
+  <span id="welcome-text"></span>
+</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="safety.html">Safety</a>
+      <a href="contact.html">Contact Us</a>
+      <span id="user-info"></span>
+<a href="login.html" id="login-link">Login</a>
+<a href="#" id="logout-btn" style="display:none;">Logout</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-container">
+
+    <div class="hero-left">
+      <h1>India's #1st Vehicle Booking Application with Mass Booking Feature</h1>
+      <p>
+        Book bikes, cabs, and commercial vehicles for daily travel,
+        weddings, parties, and events — all in one place.
+      </p>
+
+      <div class="location-box">
+        <input type="text" id="pickup" list="pickup-list" placeholder="Enter Pickup Location">
+        <button onclick="getLocation()">Use Current Location</button>
+        <datalist id="pickup-list">
+          <option value="Hazratganj, Lucknow">
+          <option value="Charbagh Railway Station">
+          <option value="Gomti Nagar">
+          <option value="Alambagh">
+          <option value="Indira Nagar">
+        </datalist>
+
+        <input type="text" id="drop" list="drop-list" placeholder="Enter Drop Location">
+        <datalist id="drop-list">
+          <option value="Hazratganj, Lucknow">
+          <option value="Charbagh Railway Station">
+          <option value="Gomti Nagar">
+          <option value="Alambagh">
+          <option value="Indira Nagar">
+        </datalist>
+      </div>
+
+      <div class="book-ride-section">
+        <button class="book-btn" onclick="bookRide()">Book Ride</button>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img src="images/image1.jpg" alt="Gaadiwala">
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-cards">
+
+      <div class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <h3>Bike-Taxi</h3>
+            <p>Avoid traffic with bike</p>
+          </div>
+          <img src="images/bike-image1.jpg" alt="Bike Taxi">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <h3>Cab</h3>
+            <p>Always comfortable ride</p>
+          </div>
+          <img src="images/cab-image1.jpg" alt="Cab">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <h3>Commercial Vehicle</h3>
+            <p>Send your goods safely</p>
+          </div>
+          <img src="images/truck-image1.jpg" alt="Commercial Vehicle">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <div class="card-text">
+            <h3>Mass Booking</h3>
+            <p>Book multiple vehicles at one place</p>
+          </div>
+          <img src="images/mass-image1.jpg" alt="Mass Booking">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose -->
+  <section class="why-choose">
+    <h2>Why Choose Gaadiwala?</h2>
+
+    <div class="why-box">
+
+      <div class="why-card">
+        <h3>Safe & Secure</h3>
+        <p>Verified drivers and reliable rides.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>Affordable</h3>
+        <p>Best pricing for daily and event travel.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>Mass Booking</h3>
+        <p>Easy transport solutions for weddings and events.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Gaadiwala</h3>
+      <p>India's #1 Mass Booking Platform for all your travel needs.</p>
+    </div>
+
+    <div class="footer-section">
+  <h4>Quick Links</h4>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="safety.html">Safety</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="privacy.html">Privacy Policy</a>
+</div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: support@gaadiwala.com</p>
+      <p>Phone: +91 0000000000</p>
+      <div class="social-icons">
+  <a href="https://www.facebook.com" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.instagram.com" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://twitter.com" target="_blank">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+
+  <a href="https://www.youtube.com" target="_blank">
+    <i class="fab fa-youtube"></i>
+  </a>
+
+  <a href="https://www.linkedin.com" target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+</div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Gaadiwala | All Rights Reserved</p>
+  </div>
+</footer>
+  <script id="homejs">
+function bookRide() {
+  const pickup = document.getElementById("pickup").value;
+  const drop = document.getElementById("drop").value;
+
+  if (pickup === "" || drop === "") {
+    alert("Please enter both pickup and drop location");
+    return;
+  }
+
+  // Save data temporarily
+  localStorage.setItem("pickup", pickup);
+  localStorage.setItem("drop", drop);
+
+  // Redirect (next page later)
+  alert("Ride booked from " + pickup + " to " + drop);
+}
+</script>
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h3>Booking Confirmed</h3>
+    <p id="summary"></p>
+    <button onclick="saveBooking(); goToBooking();">Continue</button>
+  </div>
+</div>
+
+<script>
+function bookRide() {
+  const user = localStorage.getItem("user");
+
+  if (!user) {
+    alert("Please login first!");
+    window.location.href = "login.html";
+    return;
+  }
+
+  const pickup = document.getElementById("pickup").value;
+  const drop = document.getElementById("drop").value;
+
+  if (pickup === "" || drop === "") {
+    alert("Please enter pickup and drop location");
+    return;
+  }
+
+  localStorage.setItem("pickup", pickup);
+  localStorage.setItem("drop", drop);
+
+  const fare = Math.floor(Math.random() * 200) + 100;
+
+  localStorage.setItem("fare", fare);
+
+  document.getElementById("summary").innerText =
+    "From " + pickup + " → " + drop + "\nFare: ₹" + fare;
+
+  document.getElementById("popup").style.display = "flex";
+}
+
+function goToBooking() {
+  window.location.href = "booking.html";
+}
+
+function getLocation() {
+  navigator.geolocation.getCurrentPosition((position) => {
+    document.getElementById("pickup").value =
+      "Lat: " + position.coords.latitude + ", Lng: " + position.coords.longitude;
+  });
+}
+</script>
+<script>
+const user = localStorage.getItem("user");
+
+if (user) {
+  document.getElementById("login-link").style.display = "none";
+  document.getElementById("logout-btn").style.display = "inline";
+  document.getElementById("welcome-text").innerText = "Welcome, " + user;
+}
+
+// Logout
+document.getElementById("logout-btn").onclick = function () {
+  localStorage.removeItem("user");
+  location.reload();
+};
+</script>
+
+
+</body>
+</html>

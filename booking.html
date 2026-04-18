@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking</title>
+</head>
+<body>
+
+<h2>Your Ride Details</h2>
+
+<p id="details"></p>
+
+<iframe
+  width="600"
+  height="400"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  src="https://www.google.com/maps?q=Lucknow&output=embed">
+</iframe>
+
+<script>
+const pickup = localStorage.getItem("pickup");
+const drop = localStorage.getItem("drop");
+
+document.getElementById("details").innerText =
+  "Ride from " + pickup + " to " + drop;
+</script>
+
+</body>
+</html>
